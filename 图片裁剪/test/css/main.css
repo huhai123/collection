@@ -1,0 +1,38 @@
+/* CSS reset */
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, input, textarea, p, blockquote, th, td{margin:0;padding:0; font-family:"Î¢ÈíÑÅºÚ"}
+table{border-collapse:collapse;border-spacing:0; table-layout:fixed}
+img{border:0; vertical-align:top;}
+ol, ul{list-style:none}
+h1, h2, h3, h4, h5, h6{font-size:100%;font-weight:normal}
+q:before, q:after{content:''}
+input, textarea, select{font-family:inherit;font-size:inherit;font-weight:inherit}
+input,textarea,select:focus{outline:none;}
+i,em{ font-style:normal;}
+strong{ font-weight:normal;}
+a{text-decoration:none;}
+a{outline: none; /* for Forefox */ }
+a{star:expression(this.onFocus=this.blur()); /* for Ie*/ }
+.clear:after {visibility: hidden;display: block;font-size: 0;content: " ";clear: both;height: 0;}
+.clear{*zoom:1;}
+
+/*main*/
+.btn-primary { border-color: #003973; background-color: #00468c;}
+.img-container,.img-preview { background-color: #f7f7f7; overflow: hidden; width: 100%; text-align: center;}
+.cut_box{ width: 800px; margin: 0 auto;}
+.cut_wrap{ width: 800px; }
+.img-container { float: left; max-width: 600px; min-height: 200px; max-height: 466px; margin-bottom: 20px; }
+.img-container > img { max-width: 100%; }
+.docs-preview { float: right;}
+.img-preview { margin-right: 10px; margin-bottom: 25px;}
+.img-preview > img { max-width: 100%; }
+.preview-lg { width: 148px; height: 148px; }
+.preview-md { width: 78px; height: 78px;}
+.preview-sm { width: 39px; height: 39px;}
+.cut_btn a{ width: 100px; height: 30px; line-height: 30px; color: #fff; display: inline-block; float: left; border-radius: 5px; background: #3765c2; text-align: center; margin: 0 30px;}
+.cut_btn .up_btn{ position: relative; overflow: hidden;}
+.up_btn input{ position: absolute; width: 100px; height: 30px; top: 0; left: 0; opacity: 0; cursor: pointer;}
+
+
+
+
+

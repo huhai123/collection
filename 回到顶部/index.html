@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        *{ margin: 0; padding: 0;}
+        body{ height: 2000px;}
+        .backtop{z-index: 10000;display:none; width: 50px; height: 60px; border-radius: 5px; cursor: pointer; background:url("backtop.png") top center no-repeat; position: fixed; bottom: 50px; right: 20px;}
+        .backtop:hover{ background: url("backtop.png") bottom center no-repeat;}
+    </style>
+    <script src="jquery.js"></script>
+    <title>回到顶部</title>
+</head>
+<body>
+<h1>鼠标下滑</h1>
+<div class="backtop"></div>
+<script>
+    $(function(){
+        $(".backtop").click(function() {
+            $('html,body').animate({
+                'scrollTop' : 0
+            }, 600);
+        });
+        $(window).scroll(function ()
+        {
+            var st = $(this).scrollTop();
+            if(st>200){
+                $('.backtop').fadeIn();
+            }
+            else {
+                $('.backtop').fadeOut();
+            }
+        });
+    });
+
+</script>
+</body>
+</html>
