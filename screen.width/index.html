@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<button onclick=alertScreenWidth()>点击获取屏幕(设备)宽度</button>
+<button onclick=alertDocumentWidth()>点击获取屏幕(窗口)宽度</button>
+
+</body>
+<script>
+    var ScreenWidth = screen.width;
+    var DocumentWidth = document.documentElement.clientWidth;
+    function alertScreenWidth(){
+        alert(ScreenWidth);
+    }
+    function alertDocumentWidth(){
+        alert(DocumentWidth);
+    }
+</script>
+</html>

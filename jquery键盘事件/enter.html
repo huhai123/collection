@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>键盘事件enter</title>
+    <script src="jquery.js"></script>
+</head>
+<body>
+    <input class="test" type="text" value="登陆"/>
+    <script>
+        $(function(){
+            $('.test').bind('keypress',function(event){
+                if(event.keyCode == "13")
+                {
+                    alert('你输入的内容为：' + $('.test').val());
+                }
+            });
+        });
+        /*$(function(){
+            $(document).keydown(function(event){
+                if(event.keyCode()==13){
+                    $('.test').click();
+                }
+            });
+            $('.test').click(function(){
+                alert(1111)
+            })
+        })*/
+    </script>
+</body>
+</html>

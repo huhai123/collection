@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="回到顶部/jquery.js"></script>
+    <script>
+        $(function(){
+            $('#btn01').click(function(){
+                $('a').attr('href','http://bbs.csdn.net/');
+                $('a').attr('style','color:yellow');
+            });
+            $('#btn02').click(function(){
+                $('a').prop('href','http://www.jubao56.com/');
+                $('a').prop('style','color:blue');
+            });
+            var src = 'http://blog.163.com/';
+            $('#btn03').click(function(){
+                $('p').html("<a href='"+src+"'"+"target='_blank' style='color:#000'"+">跳转页面</a>")
+            })
+        })
+    </script>
+</head>
+<body>
+    <button id="btn01">attr改变href和color</button>
+    <button id="btn02">prop改变href和color</button>
+    <button id="btn03">重写html</button>
+
+    <p><a href="https://www.baidu.com/" target="_blank" style="color: #ff0000;" >跳转页面</a></p>
+</body>
+</html>

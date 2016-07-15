@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>蒙版</title>
+    <style>
+        html,body{ width: 1920px;; height: 1000px;}
+        .cover{
+            content: '';
+            width: 100px; height:40px;
+            box-sizing: border-box;
+            border-radius: 50%;
+            border: 2000px solid #000;
+            position: absolute;
+            left: 0; top: 0;
+            box-shadow: 0 0 0 100px #000;
+        }
+        .box{ width: 100%; height: 100%; overflow: hidden; position: relative;}
+    </style>
+</head>
+<body >
+    <div class="box">
+        <div class="cover"></div>
+    </div>
+</body>
+</html>

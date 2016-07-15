@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+    (function(doc, win) {
+        var screenWidth = 0, size = 'M', root = doc.documentElement;
+        if (window.screen && screen.width) {
+            screenWidth = screen.width;
+            if (screenWidth > 1680) {
+                //alert(1111)
+                //大屏
+                size = 'L';
+            } else if (screenWidth < 480) {
+                //alert(2222)
+                // 小屏，如手机
+                size = 'S';
+            }
+        }
+        // 标记CSS
+        root.className = size;
+        // 标记JS
+        win.SIZE = size;
+    })(document, window);
+    </script>
+    <style>
+        .L .box{ width: 400px; height: 200px; background: #ff0000;}
+        .S .box{ width: 200px; height: 200px; background: #000;}
+    </style>
+</head>
+<body>
+    <div class="box">
+
+    </div>
+</body>
+</html>
